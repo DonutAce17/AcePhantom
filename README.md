@@ -1,23 +1,35 @@
-# 🛰️ AcePhantom – Stealth SSRF Scanner
+# AcePhantom 🔎🛰️
 
-AcePhantom is a powerful and stealthy SSRF detection tool for Kali Linux.  
-It detects both reflected and blind SSRF vulnerabilities using smart payload generation, internal resource crawling, and DNS rebinding tricks.
+**AcePhantom** is a stealthy, smart, and feature-rich SSRF (Server-Side Request Forgery) vulnerability scanner built for **Kali Linux**.
+
+> "It goes where Burp can't."
 
 ---
 
 ## 🚀 Features
 
-- 🔁 Obfuscated payloads (Hex, Octal, IPv6, DNS Rebinding)
-- 🕵️ Blind SSRF detection with callback listener
-- 🧠 Adaptive payload behavior based on responses
-- 🎯 Internal IP crawling (`127.0.0.1`, `169.254.169.254`, AWS metadata)
-- 📥 Burp Suite `.xml` scan importer
-- 🛰️ One-click binary for Kali Linux (`.deb` included)
+- 🔁 **Obfuscated Payload Engine**  
+  Encodes IPs (Hex, Octal, IPv6), DNS rebinding tricks, and more.
+
+- 🕵️ **Deep Reflection Matching**  
+  Identifies blind SSRF using indirect response analysis.
+
+- 🧠 **AI-Inspired Payload Adaptation**  
+  Dynamically changes payloads based on response codes or headers.
+
+- 🎯 **Internal Resource Auto-Scanner**  
+  Probes AWS IMDS (`169.254.169.254`) and `127.0.0.1` for SSRF-based privilege escalations.
+
+- 📥 **Burp Suite XML Importer**  
+  Re-scan multiple URLs exported from Burp Suite.
+
+- 🛰️ **Custom Callback Listener**  
+  Lightweight HTTP listener to catch blind SSRF callbacks.
 
 ---
 
-## 🔧 Usage
+## 🛠️ Usage
 
-Start the callback listener:
+### Start the callback listener:
 ```bash
 ./acephantom --listen
