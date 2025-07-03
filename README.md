@@ -1,35 +1,26 @@
-# AcePhantom 🔎🛰️
+# 🕵️‍♂️ AcePhantom – SSRF Scanner (v0.3.0)
 
-**AcePhantom** is a stealthy, smart, and feature-rich SSRF (Server-Side Request Forgery) vulnerability scanner built for **Kali Linux**.
+> **“It goes where Burp can't.”**  
+A fast, simple, blind SSRF detection tool built in Python — with Burp Suite XML support.
 
-> "It goes where Burp can't."
+![AcePhantom Banner](https://i.imgur.com/vHZoIVT.png) <!-- optional banner or logo if you decide to add one later -->
 
 ---
 
 ## 🚀 Features
 
-- 🔁 **Obfuscated Payload Engine**  
-  Encodes IPs (Hex, Octal, IPv6), DNS rebinding tricks, and more.
-
-- 🕵️ **Deep Reflection Matching**  
-  Identifies blind SSRF using indirect response analysis.
-
-- 🧠 **AI-Inspired Payload Adaptation**  
-  Dynamically changes payloads based on response codes or headers.
-
-- 🎯 **Internal Resource Auto-Scanner**  
-  Probes AWS IMDS (`169.254.169.254`) and `127.0.0.1` for SSRF-based privilege escalations.
-
-- 📥 **Burp Suite XML Importer**  
-  Re-scan multiple URLs exported from Burp Suite.
-
-- 🛰️ **Custom Callback Listener**  
-  Lightweight HTTP listener to catch blind SSRF callbacks.
+- 🔎 Detects blind Server-Side Request Forgery (SSRF)
+- 💣 Supports both direct URL scanning and Burp Suite exported XML
+- 🎯 Injects payloads using various IP encoding techniques (hex, octal, IPv6, etc.)
+- 🧪 Cloud metadata exploitation attempts
+- 📦 Exports findings in structured JSON (`acephantom_results.json`)
+- 📡 Callback listener on port `8008` for interaction tracking
 
 ---
 
-## 🛠️ Usage
+## 🧩 Installation
 
-### Start the callback listener:
+Download the `.deb` file from [Releases](https://github.com/DonutAce17/AcePhantom/releases) or build manually.
+
 ```bash
-./acephantom --listen
+sudo dpkg -i acephantom_0.3.0_amd64.deb
